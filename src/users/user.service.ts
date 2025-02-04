@@ -16,7 +16,7 @@ export class UserService {
 
   public async payment(id: number, amount: Decimal) {
     if (amount.lt(0))
-      throw new BadRequestException('Invalid amount');
+      throw new BadRequestException('Invalid amount: must be equal or greater than 0');
 
     return await this.prismaService.$transaction(async (tx) => {
       const user = await tx.user.findUnique({ where: { id } });
