@@ -1,0 +1,9 @@
+{
+    "workbench.tree.indent": 24,
+    "editor.tabSize": 2,
+    // "editor.formatOnSave": true,
+    "[prisma]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "Prisma.prisma"
+    },
+}
